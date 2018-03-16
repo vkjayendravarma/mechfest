@@ -1,0 +1,22 @@
+#first-slider {
+  margin-top: 3.5%; }
+
+.description {
+  padding-top: 4%;
+  padding-bottom: 5%; }
+  .description .title {
+    text-align: center;
+    padding-bottom: 3%; }
+  .description .data img {
+    width: 8em;
+    height: 10em;
+    float: left !important; }
+    @media screen and (max-width: 500px) {
+      .description .data img {
+        float: none !important;
+        margin-top: 4%;
+        margin-bottom: 6%; } }
+  .description .data .event-description {
+    width: 60%; }
+
+/*# sourceMappingURL=event.css.map */

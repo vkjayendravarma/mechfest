@@ -1,0 +1,126 @@
+@font-face {
+  font-family: pride;
+  src: url("../fonts/Tangerine-Bold.ttf"); }
+.intro {
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #C6C6C6;
+  height: inherit; }
+  @media screen and (min-width: 900px) {
+    .intro {
+      height: 70vh; } }
+  @media screen and (max-width: 900px) {
+    .intro {
+      min-height: 54vh; } }
+  .intro .landscape img {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 70vh;
+    width: 100%;
+    background-color: #C6C6C6;
+    margin-top: 3.8%; }
+    @media screen and (max-width: 900px) {
+      .intro .landscape img {
+        display: none; } }
+  .intro .portrate img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #C6C6C6; }
+    @media screen and (min-width: 900px) {
+      .intro .portrate img {
+        display: none; } }
+
+.section-headding {
+  font-size: 3em;
+  padding: 5%;
+  text-align: center; }
+
+.about .about-content {
+  text-align: center;
+  width: 70%;
+  font-size: 1.2em;
+  padding-bottom: 7%; }
+
+.events {
+  background-image: url(../images/evenback.jpeg);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+  background-attachment: fixed; }
+  @media screen and (min-width: 900px) {
+    .events {
+      background-size: 100% 100%; } }
+  .events .event-cards {
+    width: 85%; }
+    .events .event-cards .section-headding {
+      color: #ffffff; }
+    .events .event-cards .col-md-4 {
+      margin-bottom: 6%; }
+    .events .event-cards .card {
+      width: 20em;
+      height: 25em; }
+      .events .event-cards .card img {
+        width: 20em;
+        height: 25em;
+        padding: 3px;
+        border: 2px solid #eae5e5;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+      .events .event-cards .card .card-overlay {
+        width: 20em;
+        height: 25em;
+        background: rgba(234, 229, 229, 0.7);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.5s; }
+        .events .event-cards .card .card-overlay a {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: #fff;
+          text-decoration: none; }
+          .events .event-cards .card .card-overlay a .button {
+            background-color: #000;
+            color: #fff; }
+          .events .event-cards .card .card-overlay a .button:hover {
+            background: transparent;
+            color: #000;
+            border: 1px solid #000; }
+      .events .event-cards .card img:hover .card-overlay {
+        opacity: 1; }
+    .events .event-cards .card:hover .card-overlay {
+      opacity: 1; }
+
+.pride .quotes {
+  width: 100%;
+  padding: 5%;
+  width: 75%; }
+  .pride .quotes .line {
+    font-size: 4em;
+    padding-bottom: 5%;
+    line-height: 1.5em;
+    font-family: pride; }
+    @media screen and (max-width: 600px) {
+      .pride .quotes .line {
+        font-size: 1.92em; } }
+  .pride .quotes .mechanical-department {
+    text-align: left; }
+    .pride .quotes .mechanical-department .tab {
+      margin-right: 30%; }
+    .pride .quotes .mechanical-department .small-letter {
+      font-size: 0.7em; }
+  .pride .quotes .HOD {
+    text-align: right; }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,184 @@
+
+@font-face {
+    font-family: pride;
+    src: url('../fonts/Tangerine-Bold.ttf');
+}
+
+$laptop-minimum: 900px;
+$mobile-max:900px;
+
+$headding-size: 3em;
+$content-font-size:1.2em;
+$card-height: 25em;
+$card-width: 20em;
+
+
+
+.intro{
+	position: relative;
+	top: 0;
+	left: 0;
+  background-color: #C6C6C6 ;
+  height: inherit;
+  @media screen and (min-width: $laptop-minimum){
+    height: 70vh;
+  }
+  @media screen and (max-width: $mobile-max){
+    min-height: 54vh;
+  }
+
+
+  .landscape{
+		img{
+			position: relative;
+			top: 0;
+			left: 0;
+			height: 70vh;
+			width: 100%;
+      background-color:#C6C6C6;
+			margin-top: 3.8%;
+				@media screen and (max-width:$laptop-minimum ) {
+					display: none;
+				}
+		}
+	}
+
+	.portrate{
+		img{
+			position: relative;
+			top: 0;
+			left: 0;
+      width: 100%;
+			height: auto;
+      background-color: #C6C6C6;
+
+					@media screen and (min-width: $mobile-max){
+						display: none;
+					}
+		}
+	}
+
+}
+
+.section-headding{
+		font-size: $headding-size;
+		padding: 5%;
+		text-align: center;
+}
+
+.about{
+
+	.about-content{
+		text-align: center;
+		width: 70%;
+		font-size: $content-font-size;
+		padding-bottom: 7%;
+	}
+}
+.events{
+	background-image: url(../images/evenback.jpeg);
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center;
+	background-attachment: fixed;
+	@media screen and (min-width:$laptop-minimum ){
+		background-size: 100% 100%;
+	}
+
+
+	.event-cards{
+		width: 85%;
+		.section-headding{
+			color: #ffffff;
+		}
+
+		.col-md-4{
+			margin-bottom: 6%;
+		}
+
+
+		.card{
+			width: $card-width;
+			height: $card-height;
+			img{
+				width: $card-width;
+				height: $card-height;
+				padding: 3px;
+				border: 2px solid rgb(234,229,229);
+        position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+
+			}
+			.card-overlay{
+				width: $card-width;
+				height: $card-height;
+				background: rgba(234,229,229,0.7);
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				opacity: 0;
+				transition: opacity 0.5s;
+				a{
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%,-50%);
+					color: #fff;
+					text-decoration: none;
+					.button{
+						background-color: #000;
+						color: #fff;
+
+					}
+					.button:hover{
+						background: transparent;
+						color: #000;
+						border: 1px solid #000;
+					}
+				}
+			}
+			img:hover .card-overlay{
+				opacity: 1;
+			}
+		}
+		.card:hover .card-overlay{
+			opacity: 1;
+		}
+	}
+}
+
+
+
+.pride{
+	.quotes{
+		width: 100%;
+		padding: 5%;
+		width: 75%;
+		.line{
+			font-size: 4em;
+			padding-bottom: 5%;
+			line-height: 1.5em;
+			font-family: pride;
+      @media screen and (max-width: 600px){
+        font-size: 1.92em;
+      }
+		}
+		.mechanical-department{
+			text-align: left;
+			.tab{
+				margin-right: 30%;
+			}
+			.small-letter{
+				font-size: 0.7em;
+
+			}
+		}
+		.HOD{
+			text-align: right;
+		}
+	}
+
+}

@@ -1,0 +1,21 @@
+$headding-size: 3em;
+$content-font-size:1.2em;
+
+#first-slider{
+    margin-top: 3.5%;
+}
+.section-headding{
+		font-size: $headding-size;
+		padding: 5%;
+		text-align: center;
+}
+
+.about{
+
+	.about-content{
+		text-align: center;
+		width: 70%;
+		font-size: $content-font-size;
+		padding-bottom: 7%;
+	}
+}

@@ -1,0 +1,48 @@
+.contact{
+	width: 80%;
+	padding-bottom: 5%;
+	padding-top:1%;
+	color: #fff;
+	.section-headding{
+		padding-bottom: 4%;
+
+	}
+	input[type=number]::-webkit-inner-spin-button,
+	input[type=number]::-webkit-outer-spin-button {
+	    -webkit-appearance: none;
+	    -moz-appearance: none;
+	    appearance: none;
+	    margin: 0;
+	}
+	.drop{
+
+	}
+	.contact-details{
+		padding-top: 2%;
+		font-size: 1.5em;
+		a{
+			color: #fff;
+			text-decoration: none;
+		}
+		a:hover{
+			color: #eae5e5;
+			text-decoration: none;
+		}
+
+	}
+	.form-control{
+		background: transparent;
+		border: 2px solid #eae5e5;
+	}
+	.form-control:focus{
+		background: #eae5e5;
+	}
+
+}
+.contact-background{
+	background-image: url(../images/contact.jpg);
+	background-size: auto 100%;
+	background-position: center;
+	background-attachment: fixed;
+
+}

@@ -1,0 +1,29 @@
+$card-height: 10em;
+$card-width: 8em;
+
+#first-slider{
+    margin-top: 3.5%;
+}
+.description{
+  padding-top: 4%;
+  padding-bottom: 5%;
+    .title{
+      text-align: center;
+      padding-bottom: 3%;
+    }
+    .data{
+      img{
+        width: $card-width;
+        height: $card-height;
+        float: left !important;
+        @media screen and (max-width: 500px){
+          float: none !important;
+          margin-top: 4%;
+          margin-bottom: 6%;
+        }
+      }
+      .event-description{
+        width: 60%;
+      }
+    }
+}
